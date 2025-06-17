@@ -1,0 +1,10 @@
+.article {
+    grid-area: article;
+    width: 60vw;
+    background-color: #fff8eb ;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    font-family: Helvetica;
+    font-size: large;
+    text-align: center;
+}

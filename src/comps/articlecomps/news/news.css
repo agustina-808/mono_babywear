@@ -1,0 +1,78 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 95vh;
+    font-size: x-large;
+    font-family: Helvetica;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news > .p {
+    text-align: center;
+}
+
+.post {
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.text_block {
+    flex: 3;
+    padding: 30px;
+    text-align: left;
+}
+
+.img_block {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.post_image {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Первый пост - текст слева, изображение справа */
+.post:first-child {
+  flex-direction: row;
+}
+
+/* Второй пост - изображение слева, текст справа */
+.post:last-child {
+  flex-direction: row-reverse;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+  .post {
+    flex-direction: column !important;
+  }
+  
+  .img_block {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .post_image {
+    max-width: 150px;
+  }
+}

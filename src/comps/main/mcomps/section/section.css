@@ -1,0 +1,26 @@
+.section {
+    grid-area: section;
+    padding-top: 2vh;
+    width: 20vw;
+    background-color: #ffffff;
+}
+
+.link {
+    display: block;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: x-large;
+    text-align: left;
+    margin-left: 1vw;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #574635;
+}
+
+.line {
+    width: 18vw;
+}

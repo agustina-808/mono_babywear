@@ -1,0 +1,7 @@
+.index {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: Helvetica;
+}

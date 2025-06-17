@@ -1,0 +1,148 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 95vh;
+  font-size: x-large;
+  font-family: Helvetica;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.card_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card_image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  transition: 0.2s; 
+}
+
+.card_image:hover > img {
+  transform: scale(1.1);
+}
+
+.card_label {
+  padding: 4px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #ffa1a1;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card_bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card_prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.card_price::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+
+.card_price--discount {
+  position: relative;
+  font-weight: 700;
+  font-size: 25px;
+  color: #414141;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.card_price--discount::before {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  content: "Со скидкой";
+  font-weight: 400;
+  font-size: 15px;
+  color: #bfbfbf;
+}                                                                                                                                                                                                                                                                                                                          
+
+
+
+.card_price--common {
+  position: relative;
+  font-size: 17px;
+  color: #606060;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+}
+
+.card_price--common::before {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  content: "Обычная";
+  font-weight: 400;
+  font-size: 13px;
+  color: #bfbfbf;
+}
+
+.card_title {
+  display: block;
+  margin: 27px 2px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+}
+
+.card_title:hover {
+  color: #643900;
+}

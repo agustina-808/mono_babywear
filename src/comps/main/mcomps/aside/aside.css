@@ -1,0 +1,22 @@
+.aside {
+    grid-area: aside;
+    width: 20vw;
+    background-color: #fff8eb ;
+    font-size: medium;
+    font-family: Helvetica;
+    padding-left: 10px;
+}
+
+.h1 {
+    font-weight: bold;
+}
+
+.p {
+    font-weight: lighter;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    padding-right: 15px;
+}
